@@ -1,0 +1,78 @@
+/* Reset styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    color: #333;
+    background-image: url('test.jpg');
+    background-size: cover; /* background image covers the entire viewport */
+    background-position: center; 
+    margin: 0; /* Remove default body margin */
+    padding-bottom: 60px; /* Reserve space for the fixed footer */
+    min-height: 100vh; /* Ensure the body takes up at least the full height of the viewport */
+    position: relative; /* Make body a positioning context for the footer */
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically in the center */
+    padding: 20px;
+    background-color: #b25d71;
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header-left {
+    flex: 1;
+}
+
+.header-right ul {
+    list-style: none;
+}
+
+.header-right ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.header-right ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #b25d71;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed; /* Position footer fixed at the bottom */
+    bottom: 0; /* Place footer at the bottom */
+    left: 0;
+    width: 100%; /* Full width */
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #fff;
+}
